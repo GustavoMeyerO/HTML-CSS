@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    
+    <style>
+       @font-face{
+        font-family: 'pirata';
+       src: url('PirataOne-Regular.ttf') format(truetype);
+    }
+       /* dentro do format() nao usar abreviaçao */
+       /* 
+       tipos de format()
+       - opentype(otf)
+       - truetype(ttf)
+       -embedded-opentype
+       - truetype-att(apple advanced typography)
+    */
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'pirata';
+            font-size: 3em;
+        }
+        p{
+            font-family: 'pirata';
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem ab doloribus dolorem. Quam maxime accusantium, voluptate fugit voluptatibus voluptatum! Corrupti beatae tenetur quaerat error et cupiditate, necessitatibus architecto vero?</p>
+</body>
+</html>

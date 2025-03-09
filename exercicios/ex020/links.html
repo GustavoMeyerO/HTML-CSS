@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id 
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = chidren
+        */
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* visited é para sites que ja foram acessados e o link fica mais escuro, nio caso vc pode escolher a cor ne  */
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        /* active é a açao quando ele é clicado  */
+        a:active{ 
+            color: blue;
+        }
+        div{
+            background-color:gray;
+            padding-top: 1px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            width: 300px;
+            border-radius: 10px;
+           
+        }
+        /* pseudo elementos precisa do "::" serve para colocar algo antes ou depois do que vc escolher */
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            color: black;
+            font-weight:  normal;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=NCUGnRKQNqc&list=RDNCUGnRKQNqc&start_radio=1">Musica do Mhrap</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xuSvPEVlavo">Musica veigh</a></li>
+            <li><a href="https://www.youtube.com/watch?v=FiaxmiBIehs">Video aleatório</a></li>
+        </ul>
+    </div>
+</body>
+</html>
